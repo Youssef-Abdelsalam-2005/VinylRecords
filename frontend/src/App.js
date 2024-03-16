@@ -1,8 +1,20 @@
-import './App.css';
+import "./App.css";
+import Table from "./table";
+import Fields from "./fields";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [records, setRecords] = useState([]);
+
   return (
-    <div></div>
+    <>
+      <header>
+        <h1>Vinyl Records</h1>
+      </header>
+      <div id="container">
+        <Fields />
+      </div>
+    </>
   );
 }
 
